@@ -1,10 +1,10 @@
 /*Variabler*/
-$bg-color: #F0F0F0; 
-$nav-color: #ffffff;
-$footer-color: #0A1F1C;
-$primary-color: #3A8479;
-$secondary-color: #133833;
-$text-color: #484848;
+$bg-color: #F7EAD9; 
+$nav-color: #6E402A;
+$footer-color: #B09E8F;
+$primary-color: #E5989B;
+$secondary-color: #AB8E76;
+$text-color: #4A3731;
 $padding: 0.5em;
 $font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -18,7 +18,7 @@ $font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 @mixin btn($bg-color: $primary-color, $btn-padding: 0.8em 1em){
     background-color: $bg-color;
     padding: $btn-padding;
-    border-radius: 8px;
+    border-radius: 25px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -29,4 +29,5 @@ $font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: $width;
     padding: 2em;
     margin: 2em auto;
+    border-radius: 20px;
 }

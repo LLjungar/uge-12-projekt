@@ -48,7 +48,7 @@ nav{
     @include partial.flex($justify:space-between);
 
         img{
-            width: 70px;
+            width: 200px;
         }
 
         ul{
@@ -144,7 +144,7 @@ main{
 
         img{
             margin: 0 auto;
-            width: 60%;
+            width: 100%;
             display: block;
         }
 
@@ -202,17 +202,17 @@ main{
 
 .billede{
     grid-column: 5/8;
-    background-image: url(../img/presentation.jpg);
+    background-image: url(../img/index/index2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
 //Kontaktformular
 
 .kontakt-bg-img{
     grid-column: 1/7;
-    background: linear-gradient(rgba(142, 142, 142, 0.8), rgba(142, 142, 142, 0.8)), url(../img/meeting.jpg);
+    background: linear-gradient(rgba(142, 142, 142, 0.8), rgba(142, 142, 142, 0.8)), url(../img/kontakt/kontakt1.jpg);
     background-size: cover;
 }
 
