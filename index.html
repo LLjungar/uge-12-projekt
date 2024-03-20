@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banding.Co</title>
+    <title>Forside</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e52c4b58f5.js" crossorigin="anonymous"></script>
 </head>
@@ -20,6 +20,22 @@
             </nav>
             <nav class="desktop-nav">
                 <!--Desktop navigation-->
+             
+                    <!-- Søgefelt -->
+                    <div class="search">
+                        <label for="search-toggle" class="search-icon" id="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                    <input type="checkbox" id="search-toggle" role="button" style="display:none;">
+                    <div class="search-container">
+                      <form action="/search" method="GET">
+                        <input type="text" name="q" placeholder="Søg..." aria-label="Søgefelt">
+                        <button type="submit">Snus!</button>
+                      </form>
+                    </div>
+                   </div>
+            
+                   <!-- Navigation -->
                 <ul>
                     <li><a class="active" href="#">Hjem</a></li>
                     <li><a href="#">Sundhed</a></li>
@@ -27,7 +43,8 @@
                     <li><a href="#">Pleje</a></li>
                     <li><a href="#">Kontakt</a></li>
                 </ul>
-                
+
+
             </nav>
         </header>
 
@@ -131,12 +148,11 @@
         <!--Footer-->
         <footer>
             <section class="footer-left">
-                <h4>Info</h4>
-                <p>Banding.Co</p>
-                <p>Kassedammen 1</p>
-                <p>6755 Sønderby</p>
-                <p>Tlf.: <a href="tel:25456545">25 45 65 45</a></p>
-                <p>CVR: 2343 2323</p>
+                <h4>Fido Flair</h4>
+                <p>Skab et strålende liv med din bedste ven</p>
+                <p>hello@pawmail.dk</p>
+                <p>Tlf.: <a href="tel:11223344">11 22 33 44</a></p>
+                <p>CVR: 1234 1234</p>
             </section>
             <div class="footer-right">
                 <img class="logo-footer" src="img/logo/logo-uden-tekst.svg" alt="">
@@ -144,7 +160,7 @@
         </footer>
         <!--Footer bund-->
         <footer>
-                <p class="footer-bund">Banding.Co</p>
+                <p class="footer-bund">Linn Ljungar (linlju01 dkmmd23c2o) fortsætter øvelse fra undervisning og fordyber sig i SCSS under "Uge 12 projekt" 2024</p>
         </footer>
     </div>
     <!--Javascript i HTML som lært i undervisningen. Gør brugermenuen aktiv. Menupunkter kan ses når class toggleShow vises ved klik på class navToggle-->
