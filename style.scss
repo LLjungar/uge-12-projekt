@@ -97,11 +97,11 @@ nav{
         }
 
         a{
-            color: partial.$secondary-color;
+            color: partial.$bg-color;
             padding: partial.$padding;
             margin: partial.$padding;
             font-size: 20px;
-            font-weight:bold;
+            font-weight:normal;
             text-decoration: none;
                 
                 &:hover{
@@ -119,8 +119,9 @@ nav{
             cursor: pointer;
             z-index: 2;
             padding-top: 0.2em;
-            padding-right: 0.8em;
-            color: partial.$primary-color;
+            padding-left: 1em;
+            padding-right: 0.6em;
+            color: partial.$secondary-color;
           }
           
           #search-toggle:checked + .search-container,
@@ -201,6 +202,33 @@ nav{
         }
 
     }
+
+.header-img-kontakt{
+    position: relative;
+    margin-bottom: 1em;
+
+        .banner-tekst{
+            position: absolute;
+            left: 5%;
+            top: 15%;
+        }
+
+        h1{
+            font-size: 3.5vw;
+        }
+        p{
+            font-size: 2vw;
+        }
+        a{
+            @include partial.btn;
+            position: absolute;
+
+                &:hover{
+                    background-color: partial.$secondary-color;
+                    transition: 0.4s ease-in-out;
+                }
+        }
+}
 
 /*Forside styling*/
 main{
@@ -284,18 +312,66 @@ main{
 /*Træning*/
 .billede-traening{
     grid-column: 5/8;
-    background-image: url(../img/traening/træning1.jpg);
+    background-image: url(./img/traening/træning2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
 }
+
+.t-bg-img{
+    grid-column: 1/7;
+    background: url(./img/traening/træning1.jpg);
+    background-size: cover;
+    padding: 2em 4em 4em 4em;
+    border-top: 4px solid partial.$bg-color; /* Juster tykkelsen og farven på rammen */
+    border-bottom: 4px solid partial.$bg-color;
+    border-radius: 10px
+
+    img{
+       max-width: 100%;
+    }
+}
+
+
+/*Pleje*/
+.billede-pleje{
+    grid-column: 5/8;
+    background-image: url(./img/pleje/pleje1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.billede-pleje2{
+    grid-column: 5/8;
+    background-image: url(./img/pleje/pleje2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.p-bg-img{
+    grid-column: 1/7;
+    background: url(./img/pleje/pleje3.jpg);
+    background-size: cover;
+    padding: 2em 4em 4em 4em;
+    border-top: 4px solid partial.$bg-color; /* Juster tykkelsen og farven på rammen */
+    border-bottom: 4px solid partial.$bg-color;
+    border-radius: 10px
+
+    img{
+       max-width: 100%;
+    }
+}
+
+
 
 
 //Kontaktformular
 
 .kontakt-bg-img{
     grid-column: 1/7;
-    background: linear-gradient(rgba(142, 142, 142, 0.8), rgba(142, 142, 142, 0.8)), url(../img/kontakt/kontakt1.jpg);
+    background: linear-gradient(rgba(228, 228, 228, 0.1), rgba(142, 142, 142, 0.8)), url(../img/kontakt/kontakt1.jpg);
     background-size: cover;
 }
 
@@ -430,6 +506,7 @@ footer:nth-of-type(2){
         display: none;
         height: auto;
         border-top: 4px solid partial.$primary-color;
+        padding-bottom: 3.5em;
 
             ul{
                 flex-direction: column;
@@ -484,7 +561,7 @@ footer:nth-of-type(2){
 
     //tekst og billede sektion
 
-    .tekst{
+    .tekst, .tekst-sundhed, .tekst-traening{
         grid-column: 1/8;
         order: 2;
         padding: 2em 2em 4em 2em;
@@ -494,23 +571,12 @@ footer:nth-of-type(2){
         display: block;
     }
 
-    .billede{
+    .billede, .billede-sundhed, .billede-traening, .billede-pleje, .billede-pleje2{
         order: 1;
         grid-column: 1/8;
         height: 300px;
     }
 
-    .tekst-sundhed{
-        grid-column: 1/8;
-        order: 2;
-        padding: 2em 2em 4em 2em;
-    }
-
-    .billede-sundhed{
-        order: 1;
-        grid-column: 1/8;
-        height: 300px;
-    }
 
 
 

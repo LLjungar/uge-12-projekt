@@ -12,57 +12,56 @@
 <body>
         <div class="container">
     <!--Navigation-->
-        <header>
-            <!--Burger menu-->
-            <nav class="mobile-nav">
-                <a href="index.html"><img src="img/logo/logo.svg" alt="Fido"></a>
-                <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
-            </nav>
-            <nav class="desktop-nav">
-                <!--Desktop navigation-->
-             
-                    <!-- Søgefelt -->
-                    <div class="search">
-                        <label for="search-toggle" class="search-icon" id="search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </label>
-                    <input type="checkbox" id="search-toggle" role="button" style="display:none;">
-                    <div class="search-container">
-                      <form action="/search" method="GET">
+    <header>
+        <!--Burger menu-->
+        <nav class="mobile-nav">
+            <a href="index.html"><img src="img/logo/logo.svg" alt="Fido"></a>
+            <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+        </nav>
+
+        <nav class="desktop-nav">
+               <!-- Navigation -->
+            <ul>
+                <li><a class="active" href="index.html">Hjem</a></li>
+                <li><a class="active" href="sundhed.html">Sundhed</a></li>
+                <li><a class="active" href="traening.html">Træning</a></li>
+                <li><a class="active" href="pleje.html">Pleje</a></li>
+                <li><a class="active" href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+            <!-- Søgefelt -->
+            <div class="search">
+                <label for="search-toggle" class="search-icon" id="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+
+                <input type="checkbox" id="search-toggle" role="button" style="display:none;">
+                <div class="search-container">
+                    <form action="/search" method="GET">
                         <input type="text" name="q" placeholder="Søg..." aria-label="Søgefelt">
                         <button type="submit">Snus!</button>
-                      </form>
-                    </div>
-                   </div>
-            
-                   <!-- Navigation -->
-                <ul>
-                    <li><a class="active" href="index.html">Hjem</a></li>
-                    <li><a class="active" href="sundhed.html">Sundhed</a></li>
-                    <li><a class="active" href="traening.html">Træning</a></li>
-                    <li><a class="active" href="pleje.html">Pleje</a></li>
-                    <li><a class="active" href="kontakt.html">Kontakt</a></li>
-                </ul>
+                    </form>
+                </div>
+                </div>
 
-
-            </nav>
-        </header>
+        </nav>
+    </header>
 
         <!--Hovedindhold-->
         <main>
             <!--Tekst og billede sektion-->
             <section class="txt-img-section">
                 <div class="tekst">
-                    <h2>En sund hund er en glad hund</h2>
-                    <p>At holde din hund sund indebærer regelmæssige besøg hos dyrlægen for vaccinationer og helbredsundersøgelser, som er afgørende for at forebygge alvorlige sygdomme.</p>
+                    <h2>Træning: Mere End Bare Tricks</h2>
+                    <p>Effektiv hundetræning starter med basal lydighed—lære din hund kommandoer som "sit", "bliv", og "kom" er fundamentalt.</p>
                     
-                    <p>Det er vigtigt at være opmærksom på tegn på almindelige sundhedsproblemer, som kan inkludere alt fra hudproblemer til fordøjelsesforstyrrelser.</p>  
+                    <p>Disse færdigheder er vigtige for både hundens og ejerens sikkerhed og velbefindende. Udover basal lydighed, er det vigtigt at adressere og korrigere adfærdsproblemer tidligt.</p>  
 
-                    <p>Vaccinationer bør holdes ajour, og forebyggende behandling mod parasitter som flåter og lopper er nødvendig hele året.</p>
+                    <p>Det kan inkludere at arbejde med separationangst, overdreven gøen eller aggression.</p>
 
-                    <p>I tilfælde af en nødsituation, bør alle hundeejere kende til grundlæggende førstehjælp for hunde, inklusive hvordan man håndterer mindre skader eller genkender symptomer, der kræver øjeblikkelig dyrlægeassistance.</p>
+                    <p>Socialisering spiller også en kritisk rolle i udviklingen af en veltilpasset hund. At introducere din hund for nye mennesker, hunde og situationer bør gøres forsigtigt og gradvist for at sikre positive interaktioner.</p>
 
-                    <a class="secondary-btn" href="#">Læs mere om din hunds sundhed</a>
+                    <a class="secondary-btn" href="sundhed.html">Læs mere om din hunds sundhed</a>
                 </div>
                 <div class="billede-traening">
                     <!--Tom div til billede som indsættes i scss-->
@@ -70,10 +69,10 @@
             </section>
 
             <!--Kontaktformular-->
-            <section class="sundhed-bg-img">
+            <section class="t-bg-img">
                
-                    <h2>Grundlæggende sundhedspleje</h2>
-                    <p>Klik nedenfor og se videoen med en trin-for-trin guide til regelmæssige sundhedstjek, herunder hvordan man tjekker for tegn på almindelige sygdomme. Se også vores playliste fyldt med tips til pleje.</p>
+                    <h2>Tips til træning</h2>
+                    <p>Klik nedenfor og se videoen med trin-for-trin vejledning til grundlæggende hundetræning, herunder vigtige kommandoer og adfærdsteknikker. Se også vores playliste med nyttige tips og tricks til at træne din hund.</p>
                     <a href="https://www.youtube.com/watch?v=UQ2AEpQ7dyc"><img src="img/player.svg" alt="billede af player"></a>
             </section>
 

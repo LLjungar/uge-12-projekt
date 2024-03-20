@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pleje</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e52c4b58f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <div class="container">
+    <!--Navigation-->
+    <header>
+        <!--Burger menu-->
+        <nav class="mobile-nav">
+            <a href="index.html"><img src="img/logo/logo.svg" alt="Fido"></a>
+            <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+        </nav>
+
+        <nav class="desktop-nav">
+               <!-- Navigation -->
+            <ul>
+                <li><a class="active" href="index.html">Hjem</a></li>
+                <li><a class="active" href="sundhed.html">Sundhed</a></li>
+                <li><a class="active" href="traening.html">Træning</a></li>
+                <li><a class="active" href="pleje.html">Pleje</a></li>
+                <li><a class="active" href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+            <!-- Søgefelt -->
+            <div class="search">
+                <label for="search-toggle" class="search-icon" id="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+
+                <input type="checkbox" id="search-toggle" role="button" style="display:none;">
+                <div class="search-container">
+                    <form action="/search" method="GET">
+                        <input type="text" name="q" placeholder="Søg..." aria-label="Søgefelt">
+                        <button type="submit">Snus!</button>
+                    </form>
+                </div>
+                </div>
+
+        </nav>
+    </header>
+
+        <!--Hovedindhold-->
+        <main>
+            <!--Tekst og billede sektion-->
+            <section class="txt-img-section">
+                <div class="tekst">
+                    <h2>Pleje: Grundlaget for Godt Helbred</h2>
+                    <p>Pleje af din hund omfatter regelmæssig børstning og badning, hvilket er essentielt uanset pelsens længde eller type.</p>
+                    
+                    <p>Det hjælper med at fjerne dødt hår og hud og forhindrer matning, samtidig med at det giver en god chance for at tjekke efter hudproblemer.</p>  
+
+                    <p>Tandpleje er også kritisk; regelmæssig børstning af tænder kan forhindre tandkødsbetændelse og tandtab. Endelig er daglig motion nødvendig for at holde din hund i god fysisk form.</p>
+
+                    <p>Det hjælper med at forhindre overvægt, forbedrer mental sundhed og styrker båndet mellem dig og din hund.</p>
+
+                    <a class="secondary-btn" href="sundhed.html">Læs mere om din hunds sundhed</a>
+                </div>
+                <div class="billede-pleje">
+                    <!--Tom div til billede som indsættes i scss-->
+                </div>
+            </section>
+
+            <section class="txt-img-section">
+                <div class="tekst">
+                    <h2>En nøgle til din hunds velbefindende</h2>
+                    <p>En af de mest afgørende faktorer for din hunds helbred og trivsel er dens ernæring. Korrekt ernæring giver din hund de nødvendige næringsstoffer til at opretholde et sundt immunsystem, stærke knogler og muskler, og en skinnende pels.</p>
+                    
+                    <p>En afbalanceret kost bør indeholde en blanding af protein, kulhydrater, fedt, vitaminer og mineraler. Når du vælger foder til din hund, er det vigtigt at overveje dens alder, størrelse, aktivitetsniveau og eventuelle sundhedsmæssige bekymringer.</p>  
+
+                    <p>Kvalitetsfoder af høj kvalitet er typisk det bedste valg, da det indeholder de nødvendige næringsstoffer uden tilsætningsstoffer og fyldstoffer.</p>
+
+                    <p>Det er også vigtigt at være opmærksom på portionstørrelser og undgå overfodring, da fedme kan føre til en række sundhedsproblemer hos hunde. Vær opmærksom på din hunds vægt og juster portionerne efter behov.</p>
+
+                    <p>Hvis du har spørgsmål om din hunds ernæring eller behov for rådgivning omkring valg af foder, er det altid en god idé at kontakte din dyrlæge for professionel vejledning.</p>
+                </div>
+                <div class="billede-pleje2">
+                    <!--Tom div til billede som indsættes i scss-->
+                </div>
+            </section>
+
+            <!--Kontaktformular-->
+            <section class="p-bg-img">
+               
+                    <h2>Hver pote tæller - plej din bedste ven</h2>
+                    <p>Klik nedenfor og se videoen med trin-for-trin vejledning til grundlæggende pleje af din hund, herunder børstning, badning og klipning. Se også vores playliste med nyttige tips og tricks til at holde din hund sund og velplejet.</p>
+                    <a href="https://www.youtube.com/watch?v=UQ2AEpQ7dyc"><img src="img/player.svg" alt="billede af player"></a>
+            </section>
+
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <section class="footer-left">
+                <h4>Fido Flair</h4>
+                <p>Hjælp til din bedste ven</p>
+                <p>hello@pawmail.dk</p>
+                <p>Tlf.: <a href="tel:11223344">11 22 33 44</a></p>
+                <p>CVR: 1234 1234</p>
+            </section>
+            <div class="footer-right">
+                <img class="logo-footer" src="img/logo/logo-uden-tekst.svg" alt="Fido Flairs logo">
+            </div>
+        </footer>
+        <!--Footer bund-->
+        <footer>
+                <p class="footer-bund">Linn Ljungar (linlju01 dkmmd23c2o) fortsætter øvelse fra undervisning og fordyber sig i SCSS under "Uge 12 projekt" 2024</p>
+        </footer>
+    </div>
+    <!--Javascript i HTML som lært i undervisningen. Gør brugermenuen aktiv. Menupunkter kan ses når class toggleShow vises ved klik på class navToggle-->
+    <script>
+        const navbarToggle = () => {
+        const nav = document.querySelector('.desktop-nav');
+        nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
+</body>
+</html>
