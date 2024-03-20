@@ -59,7 +59,7 @@ nav ul {
   list-style-type: none;
 }
 nav a {
-  color: #F7EAD9;
+  color: #AB8E76;
   padding: 0.5em;
   margin: 0.5em;
   font-size: 20px;
@@ -79,7 +79,7 @@ nav .search-icon {
   z-index: 2;
   padding-top: 0.2em;
   padding-right: 0.8em;
-  color: #F7EAD9;
+  color: #E5989B;
 }
 nav #search-toggle:checked + .search-container,
 nav .search-container {
@@ -132,7 +132,7 @@ nav .search-container button {
 .header-img .banner-tekst {
   position: absolute;
   left: 5%;
-  top: 25%;
+  top: 15%;
 }
 .header-img h1 {
   font-size: 3.5vw;

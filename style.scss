@@ -58,7 +58,7 @@ nav{
         }
 
         a{
-            color: partial.$bg-color;
+            color: partial.$secondary-color;
             padding: partial.$padding;
             margin: partial.$padding;
             font-size: 20px;
@@ -81,7 +81,7 @@ nav{
             z-index: 2;
             padding-top: 0.2em;
             padding-right: 0.8em;
-            color: partial.$bg-color;
+            color: partial.$primary-color;
           }
           
           #search-toggle:checked + .search-container,
@@ -145,7 +145,7 @@ nav{
         .banner-tekst{
             position: absolute;
             left: 5%;
-            top: 25%;
+            top: 15%;
         }
 
         h1{
