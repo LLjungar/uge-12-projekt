@@ -45,10 +45,11 @@ nav{
     color: partial.$text-color;
     height: 6em;
     padding: 1em;
+    padding-left: 0;
     @include partial.flex($justify:space-between);
 
         img{
-            width: 200px;
+            width: 125px;
         }
 
         ul{
@@ -334,6 +335,7 @@ footer:nth-of-type(2){
 
     .mobile-nav{
         color: partial.$primary-color;
+    
 
             .bars{
                 display: flex;
@@ -357,7 +359,7 @@ footer:nth-of-type(2){
     .header-img{
         .banner-tekst{
             left: 5%;
-            top: 15%;
+            top: 2%;
             position: absolute;
         }
 
