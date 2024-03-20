@@ -32,6 +32,45 @@ img{
     grid-auto-rows: minmax(50px, auto);
 }
 
+
+/*CTA bokse*/
+
+.cta-1, .cta-2, .cta-3{
+    @include partial.cta-box;
+
+        img{
+            margin: 0 auto;
+            width: 100%;
+            display: block;
+        }
+
+        p{
+            margin-bottom: 2em;
+        }
+
+        a{
+            @include partial.btn;
+            display: block;
+
+                &:hover{
+                    background-color: partial.$secondary-color;
+                    transition: 0.4s ease-in-out;
+                }
+        }
+}
+
+.secondary-btn{
+    @include partial.btn($bg-color:transparent);
+    border: 2px solid partial.$bg-color;
+
+        &:hover{
+            background-color: partial.$bg-color;
+            color: partial.$secondary-color;
+            transition: 0.4s ease-in-out;
+        }
+}
+
+
 /*Navigation*/
 
 header{
@@ -115,10 +154,7 @@ nav{
             background-color: partial.$secondary-color;
             color: partial.$bg-color;
             cursor: pointer;
-          }
-          
-          
-          
+          }      
 }
 
 .mobile-nav{
@@ -133,11 +169,8 @@ nav{
     flex-direction: column;
 }
 
-.active{
-    color: partial.$primary-color;
-}
 
-/*Headerbillede*/
+/*Headerbillede på forside*/
 .header-img{
     position: relative;
     margin-bottom: 1em;
@@ -188,31 +221,8 @@ main{
         }
 }
 
-/*CTA bokse*/
 
-.cta-1, .cta-2, .cta-3{
-    @include partial.cta-box;
 
-        img{
-            margin: 0 auto;
-            width: 100%;
-            display: block;
-        }
-
-        p{
-            margin-bottom: 2em;
-        }
-
-        a{
-            @include partial.btn;
-            display: block;
-
-                &:hover{
-                    background-color: partial.$secondary-color;
-                    transition: 0.4s ease-in-out;
-                }
-        }
-}
 
 //Tekst og billede section
 
@@ -240,17 +250,6 @@ main{
         }
 }
 
-.secondary-btn{
-    @include partial.btn($bg-color:transparent);
-    border: 2px solid #fff;
-
-        &:hover{
-            background-color: #fff;
-            color: partial.$secondary-color;
-            transition: 0.4s ease-in-out;
-        }
-}
-
 .billede{
     grid-column: 5/8;
     background-image: url(../img/index/index2.jpg);
@@ -258,6 +257,39 @@ main{
     background-size: cover;
     background-position: left;
 }
+
+/*Sundhed*/
+.billede-sundhed{
+    grid-column: 5/8;
+    background-image: url(../img/sundhed/sundhed1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.sundhed-bg-img{
+    grid-column: 1/7;
+    background: url(../img/sundhed/sundhed2.jpg);
+    background-size: cover;
+    padding: 2em 4em 4em 4em;
+    border-top: 4px solid partial.$bg-color; /* Juster tykkelsen og farven på rammen */
+    border-bottom: 4px solid partial.$bg-color;
+    border-radius: 10px
+
+    img{
+       max-width: 100%;
+    }
+}
+
+/*Træning*/
+.billede-traening{
+    grid-column: 5/8;
+    background-image: url(../img/traening/træning1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
 
 //Kontaktformular
 
@@ -467,6 +499,20 @@ footer:nth-of-type(2){
         grid-column: 1/8;
         height: 300px;
     }
+
+    .tekst-sundhed{
+        grid-column: 1/8;
+        order: 2;
+        padding: 2em 2em 4em 2em;
+    }
+
+    .billede-sundhed{
+        order: 1;
+        grid-column: 1/8;
+        height: 300px;
+    }
+
+
 
     // kontaktformularen
 

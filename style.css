@@ -30,6 +30,51 @@ img {
   grid-auto-rows: minmax(50px, auto);
 }
 
+/*CTA bokse*/
+.cta-1, .cta-2, .cta-3 {
+  background-color: #fff;
+  width: 20vw;
+  padding: 2em;
+  margin: 2em auto;
+  border-radius: 20px;
+}
+.cta-1 img, .cta-2 img, .cta-3 img {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
+.cta-1 p, .cta-2 p, .cta-3 p {
+  margin-bottom: 2em;
+}
+.cta-1 a, .cta-2 a, .cta-3 a {
+  background-color: #E5989B;
+  padding: 0.8em 1em;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.cta-1 a:hover, .cta-2 a:hover, .cta-3 a:hover {
+  background-color: #AB8E76;
+  transition: 0.4s ease-in-out;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  padding: 0.8em 1em;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #F7EAD9;
+}
+.secondary-btn:hover {
+  background-color: #F7EAD9;
+  color: #AB8E76;
+  transition: 0.4s ease-in-out;
+}
+
 /*Navigation*/
 header {
   grid-column: 1/6;
@@ -120,11 +165,7 @@ nav .search-container button {
   flex-direction: column;
 }
 
-.active {
-  color: #E5989B;
-}
-
-/*Headerbillede*/
+/*Headerbillede på forside*/
 .header-img {
   position: relative;
   margin-bottom: 1em;
@@ -174,36 +215,6 @@ main .cta-wrapper {
   justify-content: space-around;
 }
 
-/*CTA bokse*/
-.cta-1, .cta-2, .cta-3 {
-  background-color: #fff;
-  width: 20vw;
-  padding: 2em;
-  margin: 2em auto;
-  border-radius: 20px;
-}
-.cta-1 img, .cta-2 img, .cta-3 img {
-  margin: 0 auto;
-  width: 100%;
-  display: block;
-}
-.cta-1 p, .cta-2 p, .cta-3 p {
-  margin-bottom: 2em;
-}
-.cta-1 a, .cta-2 a, .cta-3 a {
-  background-color: #E5989B;
-  padding: 0.8em 1em;
-  border-radius: 25px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-}
-.cta-1 a:hover, .cta-2 a:hover, .cta-3 a:hover {
-  background-color: #AB8E76;
-  transition: 0.4s ease-in-out;
-}
-
 .txt-img-section {
   grid-column: 1/7;
   display: grid;
@@ -225,24 +236,38 @@ main .cta-wrapper {
   text-align: left;
 }
 
-.secondary-btn {
-  background-color: transparent;
-  padding: 0.8em 1em;
-  border-radius: 25px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  border: 2px solid #fff;
-}
-.secondary-btn:hover {
-  background-color: #fff;
-  color: #AB8E76;
-  transition: 0.4s ease-in-out;
-}
-
 .billede {
   grid-column: 5/8;
   background-image: url(../img/index/index2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+/*Sundhed*/
+.billede-sundhed {
+  grid-column: 5/8;
+  background-image: url(../img/sundhed/sundhed1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.sundhed-bg-img {
+  grid-column: 1/7;
+  background: url(../img/sundhed/sundhed2.jpg);
+  background-size: cover;
+  padding: 2em 4em 4em 4em;
+  border-top: 4px solid #F7EAD9; /* Juster tykkelsen og farven på rammen */
+  border-bottom: 4px solid #F7EAD9;
+  border-radius: 10px img;
+  border-radius-max-width: 100%;
+}
+
+/*Træning*/
+.billede-traening {
+  grid-column: 5/8;
+  background-image: url(../img/traening/træning1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -422,6 +447,16 @@ footer:nth-of-type(2) p {
     display: block;
   }
   .billede {
+    order: 1;
+    grid-column: 1/8;
+    height: 300px;
+  }
+  .tekst-sundhed {
+    grid-column: 1/8;
+    order: 2;
+    padding: 2em 2em 4em 2em;
+  }
+  .billede-sundhed {
     order: 1;
     grid-column: 1/8;
     height: 300px;

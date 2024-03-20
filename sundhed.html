@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e52c4b58f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <div class="container">
+    <!--Navigation-->
+        <header>
+            <!--Burger menu-->
+            <nav class="mobile-nav">
+                <a href="index.html"><img src="img/logo/logo.svg" alt="Fido"></a>
+                <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+            </nav>
+            <nav class="desktop-nav">
+                <!--Desktop navigation-->
+             
+                    <!-- Søgefelt -->
+                    <div class="search">
+                        <label for="search-toggle" class="search-icon" id="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                    <input type="checkbox" id="search-toggle" role="button" style="display:none;">
+                    <div class="search-container">
+                      <form action="/search" method="GET">
+                        <input type="text" name="q" placeholder="Søg..." aria-label="Søgefelt">
+                        <button type="submit">Snus!</button>
+                      </form>
+                    </div>
+                   </div>
+            
+                   <!-- Navigation -->
+                <ul>
+                    <li><a class="active" href="index.html">Hjem</a></li>
+                    <li><a class="active" href="sundhed.html">Sundhed</a></li>
+                    <li><a class="active" href="traening.html">Træning</a></li>
+                    <li><a class="active" href="pleje.html">Pleje</a></li>
+                    <li><a class="active" href="kontakt.html">Kontakt</a></li>
+                </ul>
+
+
+            </nav>
+        </header>
+
+        <!--Hovedindhold-->
+        <main>
+            <!--Tekst og billede sektion-->
+            <section class="txt-img-section">
+                <div class="tekst">
+                    <h2>En sund hund er en glad hund</h2>
+                    <p>At holde din hund sund indebærer regelmæssige besøg hos dyrlægen for vaccinationer og helbredsundersøgelser, som er afgørende for at forebygge alvorlige sygdomme.</p>
+                    
+                    <p>Det er vigtigt at være opmærksom på tegn på almindelige sundhedsproblemer, som kan inkludere alt fra hudproblemer til fordøjelsesforstyrrelser.</p>  
+
+                    <p>Vaccinationer bør holdes ajour, og forebyggende behandling mod parasitter som flåter og lopper er nødvendig hele året.</p>
+
+                    <p>I tilfælde af en nødsituation, bør alle hundeejere kende til grundlæggende førstehjælp for hunde, inklusive hvordan man håndterer mindre skader eller genkender symptomer, der kræver øjeblikkelig dyrlægeassistance.</p>
+
+                    <a class="secondary-btn" href="#">Læs mere om din hunds sundhed</a>
+                </div>
+                <div class="billede-sundhed">
+                    <!--Tom div til billede som indsættes i scss-->
+                </div>
+            </section>
+
+            <!--Kontaktformular-->
+            <section class="sundhed-bg-img">
+               
+                    <h2>Grundlæggende sundhedspleje</h2>
+                    <p>Klik nedenfor og se videoen med en trin-for-trin guide til regelmæssige sundhedstjek, herunder hvordan man tjekker for tegn på almindelige sygdomme. Se også vores playliste fyldt med tips til pleje.</p>
+                    <a href="https://www.youtube.com/watch?v=UQ2AEpQ7dyc"><img src="img/player.svg" alt="billede af player"></a>
+            </section>
+
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <section class="footer-left">
+                <h4>Fido Flair</h4>
+                <p>Hjælp til din bedste ven</p>
+                <p>hello@pawmail.dk</p>
+                <p>Tlf.: <a href="tel:11223344">11 22 33 44</a></p>
+                <p>CVR: 1234 1234</p>
+            </section>
+            <div class="footer-right">
+                <img class="logo-footer" src="img/logo/logo-uden-tekst.svg" alt="Fido Flairs logo">
+            </div>
+        </footer>
+        <!--Footer bund-->
+        <footer>
+                <p class="footer-bund">Linn Ljungar (linlju01 dkmmd23c2o) fortsætter øvelse fra undervisning og fordyber sig i SCSS under "Uge 12 projekt" 2024</p>
+        </footer>
+    </div>
+    <!--Javascript i HTML som lært i undervisningen. Gør brugermenuen aktiv. Menupunkter kan ses når class toggleShow vises ved klik på class navToggle-->
+    <script>
+        const navbarToggle = () => {
+        const nav = document.querySelector('.desktop-nav');
+        nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
+</body>
+</html>
