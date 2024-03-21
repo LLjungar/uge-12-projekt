@@ -37,8 +37,8 @@ Fokus er særligt på at holde øje med terminalen i Live Sass Compile for at un
 ### Ved aflevering 
 Steder, hvor jeg stadig har brug for at forbedre mig for at nå mine mål.
 - Der er mange fejl - særligt i struktur og nesting. Men jeg kan se hvor de er :) 
-- 
-- 
+- Jeg har et problem med de billeder der ligger direkte i SCSS. Det skal jeg lære hvordan jeg løser før næste projekt, får synes det er en smart måde at arbejde med baggrunde. 
+- Hele style.scss skal næstes bedre. 
 
 
 https://github.com/LLjungar/uge-12-projekt.git

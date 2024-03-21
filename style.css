@@ -268,7 +268,7 @@ main .cta-wrapper {
 
 .billede {
   grid-column: 5/8;
-  background-image: url(/img/index/index2.jpg);
+  background-image: url(img/index/index2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -277,7 +277,7 @@ main .cta-wrapper {
 /*Sundhed*/
 .billede-sundhed {
   grid-column: 5/8;
-  background-image: url(/img/sundhed/sundhed1.jpg);
+  background-image: url(img/sundhed/sundhed1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -285,7 +285,7 @@ main .cta-wrapper {
 
 .sundhed-bg-img {
   grid-column: 1/7;
-  background: url(/img/sundhed/sundhed2.jpg);
+  background: url(img/sundhed/sundhed2.jpg);
   background-size: cover;
   padding: 2em 4em 4em 4em;
   border-top: 4px solid #F7EAD9; /* Juster tykkelsen og farven på rammen */
@@ -297,7 +297,7 @@ main .cta-wrapper {
 /*Træning*/
 .billede-traening {
   grid-column: 5/8;
-  background-image: url(/img/traening/træning2.jpg);
+  background-image: url(img/traening/træning2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -305,7 +305,7 @@ main .cta-wrapper {
 
 .t-bg-img {
   grid-column: 1/7;
-  background: url(/img/traening/træning1.jpg);
+  background: url(img/traening/træning1.jpg);
   background-size: cover;
   padding: 2em 4em 4em 4em;
   border-top: 4px solid #F7EAD9; /* Juster tykkelsen og farven på rammen */
@@ -317,7 +317,7 @@ main .cta-wrapper {
 /*Pleje*/
 .billede-pleje {
   grid-column: 5/8;
-  background-image: url(/img/pleje/pleje1.jpg);
+  background-image: url(img/pleje/pleje1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -325,7 +325,7 @@ main .cta-wrapper {
 
 .billede-pleje2 {
   grid-column: 5/8;
-  background-image: url(/img/pleje/pleje2.jpg);
+  background-image: url(img/pleje/pleje2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -333,7 +333,7 @@ main .cta-wrapper {
 
 .p-bg-img {
   grid-column: 1/7;
-  background: url(/img/pleje/pleje3.jpg);
+  background: url(img/pleje/pleje3.jpg);
   background-size: cover;
   padding: 2em 4em 4em 4em;
   border-top: 4px solid #F7EAD9; /* Juster tykkelsen og farven på rammen */
@@ -344,7 +344,7 @@ main .cta-wrapper {
 
 .kontakt-bg-img {
   grid-column: 1/7;
-  background: linear-gradient(rgba(228, 228, 228, 0.1), rgba(142, 142, 142, 0.8)), url(/img/kontakt/kontakt1.jpg);
+  background: linear-gradient(rgba(228, 228, 228, 0.1), rgba(142, 142, 142, 0.8)), url(img/kontakt/kontakt1.jpg);
   background-size: cover;
 }
 
