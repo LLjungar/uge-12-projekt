@@ -39,3 +39,6 @@ Steder, hvor jeg stadig har brug for at forbedre mig for at nå mine mål.
 - Der er mange fejl - særligt i struktur og nesting. Men jeg kan se hvor de er :) 
 - 
 - 
+
+
+https://github.com/LLjungar/uge-12-projekt.git
