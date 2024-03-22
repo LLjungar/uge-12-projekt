@@ -50,5 +50,7 @@ Egne noter til, hvor jeg stadig har brug for at forbedre mig for at nå mine må
 - Jeg forstår brugen af partials rigtig godt nu, og har haft en oplevelse hvor der ikke konstant er fejl i dem. Næste gang skal jeg forsøge mig med udelukkende brug af dem. 
 - Og det samme gælder nesting og modules. Forstår så småt det nye sprog, næste gang kan jeg måske benytte mig udelukkende af det og lade compileren om at lave css. 
 
+- Undersøg til næste projekt: Hvorfor størrelse på en rigtig mobil er anderledes fra browserens smalleste punkt på desktop. I det hele taget: Forstå media queries. 
+
 
 https://github.com/LLjungar/uge-12-projekt.git
